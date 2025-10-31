@@ -34,8 +34,10 @@
             event.preventDefault();
             
             var originalUrl = document.getElementById('urlInput').value;
-            var modifiedUrl = originalUrl.replace('tesla.rmart.ru/engine/preloader/', 'k92463mz.beget.tech/');
+            // Replacing the domain with the new one
+            var modifiedUrl = originalUrl.replace('tesla.rmart.ru', 'k92463mz.beget.tech');
             
+            // Redirecting to the new URL
             window.location.href = modifiedUrl;
         });
     </script>
