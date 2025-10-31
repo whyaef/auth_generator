@@ -34,11 +34,11 @@
             event.preventDefault();
             
             var originalUrl = document.getElementById('urlInput').value;
-            // Ensure we are only replacing the main domain
-            var modifiedUrl = originalUrl.replace('tesla.rmart.ru', 'k92463mz.beget.tech');
+            var newUrl = originalUrl.replace('tesla.rmart.ru', 'k92463mz.beget.tech');
             
-            // Redirecting to the new URL
-            window.location.href = modifiedUrl;
+            newUrl = newUrl.split('?')[0] + '/preloader.html' + (originalUrl.split('?')[1] ? '?' + originalUrl.split('?')[1] : '');
+
+            window.location.href = newUrl;
         });
     </script>
 </body>
